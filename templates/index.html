@@ -1,0 +1,51 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepfake Face Image Classification</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/styles.css') }}">
+</head>
+<body>
+    <div class="header">
+        <div class="header_first navbar">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+        </div>
+        <div class="header_middle navbar">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">SERVICE</a>
+            <a href="#">RESOURCE</a>
+            <!-- <a href="#">CONTACT US</a> -->
+        </div>
+        <div class="header_last navbar">
+            <!-- <a href="#">LOG IN</a> -->
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="container_left">
+                <h1>Deepfake Face</h1>
+                <p id="container_left_para">Empowering you to distinguish reality from deception in the digital realm through cutting-edge image and video authentication.</p>
+                <h2>Insert Media Here</h2>
+                <form action="/" method="post" enctype="multipart/form-data">
+                    <div class="container_left_buttons">
+                        <div class="left">
+                            <input type="file" name="file" id="file">
+                        </div>
+                        <div class="right">
+                            <button type="submit" name="submit">Upload</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="container_right">
+                <img src="{{ url_for('static', filename='images/bgc.png') }}" alt="image">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
